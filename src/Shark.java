@@ -5,34 +5,35 @@ public class Shark extends Fish {
         strength = 40;
         durabilityCost = 5;
         normalSprite =
-        " 				.	.\r\n" + "(..	\\_	, |\\ /|\r\n" +
-        " \\	O \\ /| \\ \\/ /\r\n" +
-        " \\		 \\/ | \\ / \r\n" +
-        "	vvvv\\		\\ | / |\r\n" +
-        "	\\^^^^ == \\_/ |\r\n" +
-        "		`\\_ ===	\\. |\r\n" +
-        "		/ /\\_ \\ /		|\r\n" +
-        "	|/ \\_ \\|	/\r\n"
-        + "		\\		/\n";
+        " _________         .    .\r\n" + 
+        "(..       \\_    ,  |\\  /|\r\n" + 
+        " \\       O  \\  /|  \\ \\/ /\r\n" + 
+        "  \\______    \\/ |   \\  / \r\n" + 
+        "     vvvv\\    \\ |   /  |\r\n" + 
+        "     \\^^^^  ==   \\_/   |\r\n" + 
+        "      `\\_   ===    \\.  |\r\n" + 
+        "      / /\\_   \\ /      |\r\n" + 
+        "      |/   \\_  \\|      /\r\n" + 
+        "             \\________/"; 
         blinkingSprite = 
-        " 				.	.\r\n" +
-        "(..	\\_	, |\\ /|\r\n" +
-        " \\	_ \\ /| \\ \\/ /\r\n" +
-        " \\		 \\/ | \\ / \r\n" +
-        "	vvvv\\		\\ | / |\r\n" +
-        "	\\^^^^ == \\_/ |\r\n" +
-        "		`\\_ ===	\\. |\r\n" +
-        "		/ /\\_ \\ /		|\r\n" +
-        "	|/ \\_ \\|	/\r\n" +
-        "		\\		/\n";
+        " _________         .    .\r\n" + 
+        "(..       \\_    ,  |\\  /|\r\n" + 
+        " \\       _  \\  /|  \\ \\/ /\r\n" + 
+        "  \\______    \\/ |   \\  / \r\n" + 
+        "     vvvv\\    \\ |   /  |\r\n" + 
+        "     \\^^^^  ==   \\_/   |\r\n" + 
+        "      `\\_   ===    \\.  |\r\n" + 
+        "      / /\\_   \\ /      |\r\n" + 
+        "      |/   \\_  \\|      /\r\n" + 
+        "             \\________/"; 
     }
 
     @Override
     public void printSprite(int ctr){
         if(ctr % 2 == 0){
-            System.out.print(normalSprite);
+            System.out.println(normalSprite);
         } else {
-            System.out.print(blinkingSprite);
+            System.out.println(blinkingSprite);
         }
     }
 }
